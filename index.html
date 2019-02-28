@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Gallary</title>
+   <link href="css/bt.css" rel="stylesheet">
+   <link href="css/style.css" rel="stylesheet">
+   <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+<div class = "container-fluid">
+<div class = "row">
+   
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/blueberries.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">DESSERTS</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Blueberries in Mug</span>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/leather-chair.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">FURNITURE</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Leather Chairs</span>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/camera.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">ELECTRONICS</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Camera</span>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/orange-chair.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">FURNITURE</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Orange Chair</span>
+      </div>
+   </div>
+
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/potted-plant.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">PLANTS</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Potted Plant</span>
+      </div>
+   </div>
+
+   <div class = "col-sm-6 col-md-4">
+      <div class = "thumbnail">
+         <img src = "img/wood-stool.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <span class="category">FURNITURE</span>
+         <a href = "#" class = "btn btn-primary" role = "button">
+            <img src="img/heart-icon.png">
+            <span class="count">0</span>
+         </a> 
+         <span class="title">Wood Stool</span>
+      </div>
+   </div>
+   
+</div>
+</div>
+<script>
+   $(document).ready(function(){
+     $(".btn-primary").click(function(e){
+      e.preventDefault();
+       $count = $(this).find('.count');
+       $count.show();
+       var count = parseInt($count.text()) + 1;
+       $count.text(count);
+     });
+   });
+</script>
+</body>
+</html>
+
+
